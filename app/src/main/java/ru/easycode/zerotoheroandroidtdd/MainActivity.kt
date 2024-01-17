@@ -32,6 +32,7 @@ class MainActivity : AppCompatActivity() {
             uiState = count.increment(countTextView.text.toString())
             uiState.apply(decrementButton, incrementButton, countTextView)
         }
+
         if(savedInstanceState == null){
             uiState = count.initial(countTextView.text.toString())
             uiState.apply(decrementButton, incrementButton, countTextView)
